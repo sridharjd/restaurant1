@@ -1,0 +1,44 @@
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  height: 100%; /* Full screen height */
+  width: 100%;  /* Full screen width */
+}
+
+.text {
+  flex: 1;
+  text-align: left;
+  font-size: 2rem; /* Increase text size */
+  font-weight: bold; /* Optional: Make text bold */
+  line-height: 1.4;
+  color: #660000; 
+}
+
+.text p {
+  color: #000000; 
+}
+
+.image {
+  flex: 1; 
+  text-align: right; 
+}
+
+.image img {
+  width: 100%;  
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.button {
+  padding: 10px 20px; 
+  border-radius: 10p;
+  font-size: 3rem; 
+  cursor: pointer; 
+  background-color: #ffffff;
+  color: #fac636;
+  border: 2px solid #fac636; 
+
+}

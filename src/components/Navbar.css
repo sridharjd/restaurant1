@@ -1,0 +1,37 @@
+
+.navbar {
+  background-color: #ffffff; 
+  padding: 30px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar list */
+.nav-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Align links in a row */
+  gap: 3rem; /* Spacing between links */
+}
+
+/* Navbar list items */
+li {
+  display: inline; /* Ensures items appear inline */
+}
+
+/* Navbar links */
+a {
+  color: rgb(248, 195, 50); /* White text for links */
+  text-decoration: none; /* Remove underline */
+  font-size: 2rem; /* Adjust font size */
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+/* Link hover effect */
+a:hover {
+  color: #f8aa00; /* Change to React blue on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
