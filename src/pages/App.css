@@ -11,34 +11,315 @@
 .text {
   flex: 1;
   text-align: left;
-  font-size: 2rem; /* Increase text size */
+  font-size: 3rem; /* Increase text size */
   font-weight: bold; /* Optional: Make text bold */
-  line-height: 1.4;
+  line-height: 1.2;
   color: #660000; 
+}
+.text-head{
+  color: #ff9900;
 }
 
 .text p {
-  color: #000000; 
+  font-size: 1.3rem;
+  color: #000000;
+  font-style: oblique;
+  line-height: 2.3;
 }
 
 .image {
   flex: 1; 
   text-align: right; 
+ 
 }
 
 .image img {
-  width: 100%;  
-  height: 100%; 
+  width: 70%;  
+  height: 60%; 
   object-fit: cover; 
+  border-radius: 150px;
+  padding: 110px;
 }
+
 
 .button {
   padding: 10px 20px; 
   border-radius: 10p;
-  font-size: 3rem; 
+  font-size: 1rem; 
   cursor: pointer; 
   background-color: #ffffff;
   color: #fac636;
-  border: 2px solid #fac636; 
+  border: 4px solid #ff9900;
+  border-radius: 11px; 
 
+}
+
+
+/* css for contactus */
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  height: 100%; /* Full screen height */
+  width: 100%;  /* Full screen width */
+}
+
+.contact-text {
+  flex: 1;
+  text-align: left;
+  font-size: 1.4rem; /* Increase text size */
+  font-weight: bold; /* Optional: Make text bold */
+  line-height: 1.2;
+  color: #c02621;
+  margin-left: 140px;
+  padding-top: 0%;
+}
+
+.contact-image {
+  flex: 1; 
+  text-align: left; 
+ 
+}
+
+.contact-image img {
+  width: 50%;  
+  height: 60%; 
+  object-fit: cover; 
+  border-radius: 150px;
+  padding: 110px;
+}
+
+.contact-lists {
+  list-style-type: none; 
+  padding-top: 30px;
+  margin: 0;
+  display: flex;
+  gap: 3rem;
+  font-size: 1.4rem;
+}
+
+.icon{
+  color:#ff9900;
+}
+
+.media-icon{
+  color:#c02621;
+  font-size: 60px;
+  width: 60px;
+  height: 60px;
+}
+
+.foot{
+  background-color: #c02621;
+  color: #ffffff;
+}
+
+.foot1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.foot-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none; /* Remove bullet points */
+  gap: 10rem; /* Spacing between links */
+  margin-left: 30%;
+}
+
+.foot-list a {
+  color: rgb(250, 250, 250); /* White text for links */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem; /* Adjust font size */
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+/* Link hover effect */
+.foot-list a:hover {
+  color: #ffffff; /* Change to React blue on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.foot-button{
+  font-size: 1rem; 
+  cursor: pointer; 
+  background-color: #ff9900;
+  padding: 10px 20px; 
+  border-radius: 10;
+  font-size: 1rem;  
+  color: #ffffff;
+  border-radius: 11px;
+  border: 4px solid #ff9900;
+}
+.foot-foot{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.5rem;
+  padding-top: 70px;
+}
+
+
+/* css for reservations */
+.reserve {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+
+.reserveimage {
+  background-image: url("images/restaurant.jpg"); /* Replace with your image path */
+  background-size: cover;        /* Makes the image cover the entire container */
+  background-position: center;   /* Centers the image */
+  background-repeat: no-repeat;  /* Ensures the image doesn't repeat */
+  padding: 20px;                 /* Adds spacing inside the container */
+  border-radius: 8px;            /* Optional: Rounds the corners */
+  color: white;                  /* Ensures text is readable on the background */
+  text-align: center;            /* Centers the text inside the container */
+}
+
+.reserve-button{
+  font-size: 1rem; 
+  cursor: pointer; 
+  background-color: #c02621;
+  padding: 10px 20px; 
+  border-radius: 10;
+  font-size: 1rem;  
+  color: #ffffff;
+  
+  border: 4px solid #c02621;
+  width: 100%;
+}
+
+
+
+/* css for gallery */
+
+.menu-gallery {
+  padding: 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.menu-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff9900;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.menu-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+
+.menu-info {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+  justify-content: space-between; /* Distributes left and right items */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-info .left-item {
+  flex: 1 1 45%; /* Takes 45% width, aligned left */
+  text-align: left;
+}
+
+.menu-info .right-item {
+  flex: 1 1 45%; /* Takes 45% width, aligned right */
+  text-align: right;
+}
+
+.menu-info-icon {
+  font-size: 30px;
+  color: #ff9900;
+}
+
+.menu-button {
+  background-color: #ffffff;
+  color: #c02621;
+  border: 4px solid #c02621;
+  padding: 10px 20px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+
+
+/* css for gallery */
+.restaurant-gallery {
+  padding: 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.gallery-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.gallery-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+
+.gallery-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.gallery-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.gallery-info h3 {
+  margin: 0 0 10px;
+  color: #555;
+}
+
+.gallery-info p {
+  margin: 0;
+  color: #777;
 }

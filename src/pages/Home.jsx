@@ -1,6 +1,5 @@
 import React from 'react'
 import "./App.css"
-import spicyImage from '../assets/spicy1.jpg'
 
 const Home = () => {
   return (
@@ -11,7 +10,7 @@ const Home = () => {
         <button className="button">Reservation Now</button>
       </div>
       <div className="image">
-        <img src={spicyImage} alt="Spicy dish" />
+        <img src="images/spicy1.jpg" alt="Spicy dish" />
       </div>
     </div>
   )

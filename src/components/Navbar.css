@@ -24,7 +24,7 @@ li {
 
 /* Navbar links */
 a {
-  color: rgb(248, 195, 50); /* White text for links */
+  color: #ff9900; /* White text for links */
   text-decoration: none; /* Remove underline */
   font-size: 2rem; /* Adjust font size */
   transition: color 0.3s ease; /* Smooth color change on hover */
@@ -32,6 +32,6 @@ a {
 
 /* Link hover effect */
 a:hover {
-  color: #f8aa00; /* Change to React blue on hover */
+  color: #ff9900; /* Change to React blue on hover */
   text-decoration: underline; /* Add underline on hover */
 }
