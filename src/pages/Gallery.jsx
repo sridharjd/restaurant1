@@ -25,7 +25,16 @@ const Gallery = () => {
           </div>
         ))}
       </div>
+
+      <div className="center-box">
+        <div className="box-content">
+          <h2>Gallery</h2>
+          <hr style={{ backgroundColor: '#fdfdfd', height: '3px', border: 'none' }} />
+          <p>A Visual Feast of Our Culinary Creations</p>
+        </div>
+      </div>
     </div>
+    
   );
 };
 

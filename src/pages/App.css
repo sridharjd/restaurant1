@@ -189,7 +189,6 @@
   border-radius: 10;
   font-size: 1rem;  
   color: #ffffff;
-  
   border: 4px solid #c02621;
   width: 100%;
 }
@@ -260,38 +259,52 @@
   font-size: 30px;
   color: #ff9900;
 }
+.menu-button1 {
+  background-color: #817979; /* Green */
+  border: none;
+  color: white;
+  padding: 13px 70px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+  
+.menu-button1:hover {
+    background-color: #c02621; /* Green */
+    color: white;
+  }
+
 
 .menu-button {
   background-color: #ffffff;
   color: #c02621;
   border: 4px solid #c02621;
-  padding: 10px 20px;
+  padding: 7px 30px;
+  margin: 5px;
   font-size: 12px;
   cursor: pointer;
-  border-radius: 15px;
+  border-radius: 11px;
 }
 
 
 
 /* css for gallery */
 .restaurant-gallery {
-  padding: 20px;
+  padding: 50px;
   background-color: #f8f9fa;
   text-align: center;
 }
 
-.gallery-title {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #333;
-}
-
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-auto-rows: auto; /* Automatically adjust row height */
+  gap: 20px; /* Space between items */
   margin: 0 auto;
-  max-width: 1200px;
 }
 
 .gallery-item {
@@ -299,27 +312,135 @@
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  transition: transform 0.3s ease;
 }
 
-
 .gallery-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+  width: 100%; /* Full width within the grid item */
+  height: 300px; /* Adjust height as desired */
+  object-fit: cover; /* Ensures images maintain aspect ratio and fill the area */
 }
 
 .gallery-info {
-  padding: 15px;
-  text-align: left;
+  padding: 10px;
+  text-align: center;
 }
 
 .gallery-info h3 {
-  margin: 0 0 10px;
-  color: #555;
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+  color: #333;
 }
 
 .gallery-info p {
   margin: 0;
+  font-size: 0.9rem;
   color: #777;
 }
+
+.center-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* To perfectly center the box */
+  background-color: #c02621; /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 100%; /* Adjust width as needed */
+  max-width: 400px; /* Set a max-width for the box */
+  height: 350px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.box-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* To perfectly center the box */
+  filter: brightness(130%);
+}
+.center-box h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #ff9900;
+}
+
+.center-box p {
+  font-size: 1.1rem;
+  color: #fdfdfd;
+}
+
+
+/* css for testimonials */
+.testimonialsbox1 {
+  flex: 1;
+  text-align: left;
+  font-size: 3rem; /* Increase text size */
+  font-weight: bold; /* Optional: Make text bold */
+  color: #fdfdfd;
+  background-color: #c02621;
+  padding-left: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  height: 700px;
+  width: 80%; /* Adjust the width */
+  max-width: 750px; /* Optional: Set a max-width */
+  margin: 0 auto; /* Center the box horizontally */
+}
+
+.testimonialsbox1 p {
+  font-size: 1.5rem;
+  font-style: normal;
+}
+
+.testimonialsbox1-1 {
+  display: flex; /* Added to make the layout flexible */
+  flex: 1;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  text-align: center;
+  font-size: 3rem; /* Increased text size */
+  font-weight: bold; /* Optional: Make text bold */
+  line-height: 1.2;
+  color: #fdfdfd;
+  background-color: #ffffff; /* Changed to match the rest of the theme */
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 100%; /* Set width to 100% to be responsive */
+  max-width: 400px; /* Optional: Set a max width */
+  height: 100px;
+  margin: 0 auto; /* Centers the box horizontally */
+  padding: 35px; /* Added padding for better spacing */
+}
+
+.testimonialsbox1-1 p {
+  text-align: center;
+  color: #000000;
+  font-size: 2rem;
+  font-style: normal;
+  margin: 0; /* Reset any default margins */
+}
+
+
+.testimonials2{
+  flex: 1;
+  text-align: 'left';
+  padding-left: '20px';
+}
+
+.testimonials2-1{
+  color: #c02621;
+  display: flex;
+  gap: 50px; 
+  height: 100%; 
+  width: 100%;  
+}
+
+.testimonials2button{
+    color: #c02621;
+    padding: 7px 30px;
+    margin: 5px;
+    cursor: pointer;
+    
+  }

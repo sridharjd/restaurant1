@@ -16,6 +16,10 @@ const Menu = () => {
     <div className="menu-gallery">
       <h2 className="menu-title">Our Menu</h2>
       <p>Enjoy a wide range of tasty dishes made for everyone to love</p>
+      <buttton className="menu-button1" >Starters</buttton>
+      <buttton className="menu-button1" >Main Courses</buttton>
+      <buttton className="menu-button1" >Desserts</buttton>
+      <buttton className="menu-button1" >Beverages</buttton>
       <hr style={{ backgroundColor: '#ff9900', height: '3px', border: 'none' }} />
       <div className="menu-grid">
         {galleryItems.map((item) => (
